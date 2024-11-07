@@ -1,0 +1,35 @@
+* {
+    
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+
+.file-explorer ul {
+    list-style-type: none;
+}
+
+.folder {
+    cursor: pointer;
+    color: #555;
+}
+
+.folder:hover {
+    color: #000;
+}
+
+.nested {
+    display: none;
+    margin-left: 20px;
+}
+
+.nested li {
+    margin: 5px 0;
+}
