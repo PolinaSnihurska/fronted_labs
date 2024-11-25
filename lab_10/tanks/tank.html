@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Most Popular Tanks</title>
+    <link rel="stylesheet" href="style9.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Most popular tanks</h1>
+        </div>
+        <div class="list">
+            <div class="back" onclick="selectTank(this, 'image.html')">
+                <img class="img" src="images/image.png" alt="">
+            </div>
+            <div>
+                <p>🇨🇳 <span class="num">10</span> OBJECT 140</p>
+            </div>
+        </div>
+        <div class="back" onclick="selectTank(this, 'image-2.html')">
+            <img class="img" src="images/image-2.png" alt="">
+            <div>
+                <p>🇨🇳 <span class="num">10</span> T-62A</p>
+            </div>
+        </div>
+        <div class="back" onclick="selectTank(this, 'image-3.html')">
+            <img class="img" src="images/image-3.png" alt="">
+            <div>
+                <p>🇩🇪 <span class="num">10</span> E 100</p>
+            </div>
+        </div>
+        <div class="back" onclick="selectTank(this, 'image-4.html')">
+            <img class="img" src="images/image-4.png" alt="">
+            <div>
+                <p>🇩🇪 <span class="num">10</span> MAUS</p>
+            </div>
+        </div>
+        <div class="back" onclick="selectTank(this, 'image-5.html')">
+            <img class="img" src="images/image-5.png" alt="">
+            <div>
+                <p>🇺🇸 <span class="num">10</span> T110E5</p>
+            </div>
+        </div>
+        <div class="back" onclick="selectTank(this, 'image-6.html')">
+            <img class="img" src="images/image-6.png" alt="">
+            <div>
+                <p>🇺🇸 <span class="num">10</span> T57 HEAVY TANK</p>
+            </div>
+        </div>
+        <div class="back" onclick="selectTank(this, 'image-7.html')">
+            <img class="img" src="images/image-7.png" alt="">
+            <div>
+                <p>🇬🇧 <span class="num">10</span> FV215B</p>
+            </div>
+        </div>
+        <div class="back" onclick="selectTank(this, 'image-8.html')">
+            <img class="img" src="images/image-8.png" alt="">
+            <div>
+                <p>🇬🇧 <span class="num">10</span> CONQUEROR GUN CARRIAGE</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function selectTank(element, url) {
+            let tankItems = document.querySelectorAll('.back');
+            tankItems.forEach(item => item.classList.remove('selected'));
+            element.classList.add('selected');
+            window.location.href = url;
+        }
+    </script>
+</body>
